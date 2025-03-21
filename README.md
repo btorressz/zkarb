@@ -15,3 +15,19 @@ A high-speed, privacy-preserving arbitrage protocol built on Solana and powered 
 - Dynamically adjusts fees and liquidity based on network state and pool conditions.
 
 ---
+
+## ⚙️ Core Features
+
+| Feature                             | Description                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------|
+| 💸 Staking Rewards                 | Users stake $ZKARB to access arbitrage pools and earn profits.             |
+| 🛡️ ZK Privacy                     | Arbitrage trades use ZK-SNARKs to hide price differentials and routes.     |
+| 🚀 Slippage Protection            | Trades must meet minimum profit targets before executing.                  |
+| 💰 Profit Sharing                 | Rewards distributed to stakers and LPs proportionally.                     |
+| 🔒 Flash Loan Protection          | Temporary staking lockup to prevent exploit-based withdrawals.             |
+| ♻️ Liquidity Rebalancing         | Pools are dynamically balanced across AMMs.                                |
+| 📊 Dynamic Fees                  | Protocol fees adjust based on Solana’s current fee model.                  |
+| 🧨 MEV-Resistant                 | Uses randomized delays to avoid sandwich attacks and frontrunning.         |
+| 🔥 Fee Burning                   | A portion of the protocol fees are burned to increase scarcity.            |
+
+---
