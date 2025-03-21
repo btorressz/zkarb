@@ -74,3 +74,26 @@ All major actions emit events for transparency and indexability:
 - `FeeTokensBurned`
 
 ---
+
+## 🚀 Future Enhancements
+
+✅ = Done | 🛠 = In Progress | 🧠 = Planned
+
+| Feature                                             | Status |
+|-----------------------------------------------------|--------|
+| Two-Step Admin Rotation                             | 🧠     |
+| Arbitrage Rate Limiting / Cooldowns                 | 🧠     |
+| Reentrancy Guard                                    | 🧠     |
+| Staking Multiplier for Long-Term Stakers            | 🧠     |
+| Liquidity Tiering (Silver / Gold / Diamond)         | 🧠     |
+| Epoch-Based Reward Distribution                     | 🧠     |
+| ZK Proof Offloading to Verifier Program             | 🧠     |
+| Encrypted Trade Routing (ZK Paths)                  | 🧠     |
+| Cross-DEX Multi-Token Arbitrage Support             | 🧠     |
+| DAO Governance Hooks for Fee / Pool Updates         | 🧠     |
+| Emergency Pause Switch                              | 🧠     |
+| Full CPI Integration with external DEXs             | 🧠     |
+| Trader Win/Loss Leaderboards                        | 🧠     |
+
+---
+
