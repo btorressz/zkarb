@@ -31,3 +31,46 @@ A high-speed, privacy-preserving arbitrage protocol built on Solana and powered 
 | 🔥 Fee Burning                   | A portion of the protocol fees are burned to increase scarcity.            |
 
 ---
+
+
+## 📦 Program Structure (lib.rs)
+
+- `initialize` – Initializes the protocol, vaults, and admin.
+- `stake_tokens` – Allows users to stake $ZKARB for eligibility and rewards.
+- `withdraw_stake` – Lets stakers withdraw their funds after a lockup period.
+- `add_liquidity` – Allows LPs to deposit funds to the arbitrage vault.
+- `remove_liquidity` – LPs can withdraw capital after removing liquidity.
+- `approve_liquidity_provider` – Enables admin approval of trusted LPs.
+- `execute_arbitrage` – Verifies ZK proof, ensures profit, distributes fees.
+- `rebalance_liquidity` – Rebalances AMM liquidity for optimal execution.
+- `update_fee_multiplier` – Updates the dynamic protocol fee rate.
+- `burn_fee_tokens` – Burns accumulated protocol fees from the vault.
+
+---
+
+## 🔐 Security & Anti-Abuse Features
+
+- Manual `owner` verification for stake and LP accounts.
+- Rate-limiting via `last_arbitrage_at` (planned).
+- No `init_if_needed` to avoid re-initialization attacks.
+- All seeds and vaults follow Solana PDA security patterns.
+- Pausable architecture and upgrade-ready design (planned).
+
+---
+
+## 📈 Emitted Events
+
+All major actions emit events for transparency and indexability:
+
+- `StakeDeposited`
+- `StakeWithdrawn`
+- `BonusRewardEligible`
+- `LiquidityDeposited`
+- `LiquidityRemoved`
+- `LiquidityProviderApproved`
+- `ArbitrageExecuted`
+- `LiquidityRebalanced`
+- `FeeMultiplierUpdated`
+- `FeeTokensBurned`
+
+---
